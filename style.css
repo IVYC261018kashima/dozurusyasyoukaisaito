@@ -1,0 +1,380 @@
+/* 全体のリセットと基本設定 */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(img/dozlesya.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    text-align: center;
+    padding: 4rem 1rem 12rem 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* メインビジュアル */
+.hero {
+    color: #202124;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+/* 「もくじ」のスタイル */
+.toc {
+    background-color: rgba(255, 255, 255, 0.95); /* 少し透ける白ボックス */
+    border-radius: 12px;
+    margin: 30px auto;                           /* 上下の間隔 */
+    padding: 25px 20px;
+    max-width: 800px;                            /* 他のカードと横幅を揃える */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);     /* 軽い影 */
+    text-align: center;                          /* 中央寄せ */
+}
+
+.toc-title {
+    font-size: 1.2rem;
+    color: #202124;
+    margin: 0 0 15px 0;
+    display: inline-block;                       /* 下線の長さを文字幅に合わせる */
+    background: linear-gradient(transparent 75%, #ff7f7f 75%);
+    padding: 0 10px;
+    border-radius: 4px;                          /* 蛍光ペンの端を少し丸くして優しく見せる */
+}
+
+.toc ul {
+    list-style: none;                            /* 箇条書きの「・」を消す */
+    padding: 0;
+    margin: 0;
+    display: flex;                               /* 横一列に並べる */
+    justify-content: center;                     /* 中央に寄せる */
+    gap: 20px;                                   /* 項目同士の間隔 */
+    flex-wrap: wrap;                             /* 画面が狭いときは自動改行 */
+}
+
+.toc li a {
+    display: inline-block;
+    color: #2c3e50;
+    text-decoration: none;                       /* 下線を消す */
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #f1f3f4;                   /* 押しやすい薄グレーのボタン風 */
+    transition: all 0.3s ease;                   /* ふわっと変わるアニメーション */
+}
+
+/* マウスを乗せたときの動き */
+.toc li a:hover {
+    background-color: #ff7f7f;                   /* 背景が赤色に */
+    color: white;                                /* 文字は白色に */
+    transform: translateY(-2px);                 /* ほんの少し上に浮く */
+    box-shadow: 0 4px 8px rgba(255, 127, 127, 0.3);
+}
+
+/* スムーズにスクロールさせる（CSSの最上部か、htmlタグに対して記述するのがおすすめ） */
+html {
+    scroll-behavior: smooth;
+}
+
+/* メインエリア（ヘッダーとフッター以外）の背景設定 */
+.main-content {
+    /* おともだちの画像を指定します（ファイル名に合わせて変更してください） */
+    background-image: url(img/bigbos.jpg),url(img/gurasan.jpg),url(img/inari.jpg),url(img/yukidarumakun.jpg),url(img/menfukurou.jpg);
+    /* それぞれの画像の表示位置をバラバラに指定します（左上、右下など） */
+    background-position: 
+        left 5% top 15%,      /* 1人目：左から5%、上から15%の位置 */
+        right 5% top 20%,     /* 2人目：右から5%、上から20%の位置 */
+        left 3% bottom 15%,   /* 3人目：左から3%、下から15%の位置 */
+        right 3% bottom 25%,  /* 4人目：右から3%、下から25%の位置 */
+        left 50% bottom 5%;   /* 5人目：真ん中の下の方 */
+
+    /* それぞれの画像の大きさを指定します（横幅 120px など好みのサイズに） */
+    background-size: 
+        120px auto,           /* 1人目のサイズ */
+        130px auto,           /* 2人目のサイズ */
+        120px auto,           /* 3人目のサイズ */
+        140px auto,           /* 4人目のサイズ */
+        110px auto;           /* 5人目のサイズ */
+
+    /* 共通の設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* スクロールしてもおともだちの位置を固定する */
+    
+    padding: 40px 0;              /* 上下の余白 */
+}
+
+/* 各セクションを白いボックスにして、背景画像の上に浮かせる */
+.hero, .about, .members, .videos {
+    background-color: rgba(255, 255, 255, 0.95); /* ほんの少しだけ透ける白 */
+    border-radius: 12px;                         /* 角を丸くする */
+    margin: 40px auto;                           /* ボックス同士の間の隙間 */
+    padding: 40px 20px;                          /* ボックスの内側の余白 */
+    max-width: 800px;                            /* 読みやすい横幅に制限 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);     /* 軽い影をつけて立体感を出す */
+}
+
+/* 共通セクション */
+section {
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* メンバーセクション */
+.member-buttons {
+    margin-bottom: 2rem;
+}
+
+.member-btn {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border: 2px solid #2c3e50;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* --- メンバー別のボタンカラー設定 --- */
+
+/* ドズル（赤） */
+.member-btn.dozle { border-color: #c80000; color: #c80000; } /* 枠線と文字 */
+.member-btn.dozle.active, .member-btn.dozle:hover { background-color: #c80000; color: white; } /* 塗りつぶし */
+
+/* ぼんじゅうる（紫） */
+.member-btn.bon { border-color: #733c93; color: #733c93; }
+.member-btn.bon.active, .member-btn.bon:hover { background-color: #733c93; color: white; }
+
+/* おんりー（黄） */
+.member-btn.only { border-color: #fcc700; color: #fcc700; }
+.member-btn.only.active, .member-btn.only:hover { background-color: #fcc700; color: white; }
+
+/* おらふくん（水色） */
+.member-btn.orafu { border-color: #54c3f1; color: #54c3f1; }
+.member-btn.orafu.active, .member-btn.orafu:hover { background-color: #54c3f1; color: white; }
+
+/* おおはらMEN（ピンク） */
+.member-btn.men { border-color: #eb6d9a; color: #eb6d9a; }
+.member-btn.men.active, .member-btn.men:hover { background-color: #eb6d9a; color: white; }
+
+/* メンバーカード */
+.member-card {
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+    animation: fadeIn 0.5s ease;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.member-img-placeholder {
+    width: 40%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.member-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.member-info {
+    padding: 2.5rem;
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+#member-desc ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+#member-desc li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+    color: #3c4043;
+}
+
+#member-title {
+    font-size: 0.9rem;
+    color: #3c4043;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+/*おすすめ動画の紹介*/
+/* 動画セクション全体の上下の余白 */
+.videos {
+    padding: 60px 20px;       /* 上下に60px、左右に20pxの余白を設けて綺麗に区切ります */
+    text-align: center;       /* セクション内の要素を中央基準に */
+}
+
+/* おすすめ動画のセクションの見出しスタイル */
+.video-section-title {
+    font-size: 1.5rem;       /* メンバー紹介の見出しと同じ大きさに */
+    color: #202124;
+    text-align: center;  
+    margin: 0 auto 30px auto;
+    max-width: 600px;        /* 横幅の基準をカードや動画と統一 */
+}
+
+/* おすすめ動画セクションの紹介文スタイル */
+.video-section-desc {
+    font-size: 1rem;         /* 読みやすい標準的なサイズ */
+    color: #5f6368;          /* 少し優しいグレー */
+    text-align: center;
+    margin: 0 auto 40px auto; /* 下にある1本目の動画との間に程よい隙間（40px）をあける */
+    max-width: 600px;        /* 横幅を動画やカードと統一 */
+    line-height: 1.6;        /* 行間を広げて読みやすく */
+}
+
+/* 動画の上の紹介文全体の枠 */
+.video-header {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto 10px auto; /* 上に多め（40px）、動画との間は狭め（10px）の隙間 */
+    text-align: left; /* 左詰めに設定 */
+    box-sizing: border-box;
+    padding: 0 10px; /* スマホ時の文字のハミ出し防止 */
+}
+
+/* 2個目以降の動画ヘッダーの上の隙間を作る */
+.second-video {
+    margin-top: 50px !important; /* 1本目の動画との間に心地よい間隔（50px）をあける */
+}
+
+/* 「おすすめ動画」という小さな水色のタグ */
+.video-tag {
+    display: inline-block;
+    background-color: #e8f0fe; /* Google風の薄い青 */
+    color: #1a73e8; /* Googleの青 */
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/* 動画のタイトル */
+.video-title {
+    font-size: 1rem;
+    margin: 0 0 6px 0;
+    color: #202124;
+}
+
+/* 動画の解説文 */
+.video-desc {
+    font-size: 0.85rem;
+    color: #5f6368; /* 少し優しいグレー */
+    line-height: 1.6;
+    margin: 8px 0 0 0;
+    text-align: left;
+}
+
+/* 解説文のなかの <small> の文字サイズを少し小さくする設定 */
+.video-desc small {
+    font-size: 0.75rem;       /* 周りの文字より一回り小さく */
+    color: #5f6368;
+}
+
+/* 動画の外枠：メンバーカードの見た目（幅600px、角丸、影）に合わせる */
+.video-container {
+    width: 100%;
+    max-width: 600px;        /* メンバーカードの幅と完全に統一 */
+    margin: 0 auto; /* 紹介文との密着間をよくするため、上野marginをリセット */
+    border-radius: 10px;     /* カードと同じ角丸 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* カードと同じ柔らかい影 */
+    overflow: hidden;        /* 角丸からはみ出た動画の端をカット */
+    
+    /* YouTubeの標準比率「16:9」を保ったまま伸縮させる魔法の設定 */
+    position: relative;
+    padding-top: 56.25%;     /* 9 ÷ 16 ＝ 0.5625（16:9の比率） */
+    height: 0;
+}
+
+/* 中にあるYouTube本体（iframe）を枠いっぱいに広げる */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;            /* 余計な線を消す */
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+    margin-top: 3rem;
+}
+
+/* ---　スマホ・画面幅が狭いときのレスポンシブ対応 --- */
+@media screen and (max-width: 600px) {
+    
+    /* メンバー紹介カードを縦並びに変更 */
+    .member-card {
+        flex-direction: column; 
+        max-height: none;       /* 縦並びになるので全体の高さ制限を解除 */
+    }
+
+    /* 上側：画像エリアの調整 */
+    .member-img-placeholder {
+        width: 100%;            /* 横幅いっぱいに広げる */
+        height: 200px;          /* スマホ用に高さを少しコンパクトに調整 */
+    }
+
+    /* 下側：紹介文エリアの調整 */
+    .member-info {
+        width: 100%;            /* 横幅いっぱいに広げる */
+        max-height: none;       /* 縦に伸びるように高さ制限を解除 */
+        padding: 1.5rem;        /* スマホ用に中の余白を少し狭く */
+    }
+    
+    /* 動画の上の紹介文エリアの余白調整 */
+    .video-header {
+        margin-top: 25px;       /* スマホでのカードとの隙間を少し詰める */
+    }
+
+    /* ここにヘッダーのレスポンシブコードを追加します！ */
+    header {
+        /* パソコン時の 8rem（約128px）から、スマホ用に 4rem（約64px）へ半分に縮小 */
+        padding: 4rem 1rem; 
+        
+        /* 縦長画面でも背景画像の主役が真ん中に来るように固定 */
+        background-position: center;
+        background-size: cover;
+    }
+}

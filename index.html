@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドズル社紹介サイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ドズル社紹介サイト</h1>
+    </header>
+
+    <main class="main-content">
+
+        <section class="hero">
+            <h2>ドズル社の紹介サイトへようこそ!!</h2>
+            <p>ここでは、メンバーのプロフィールやおすすめの動画などを紹介します。</p>
+        </section>
+
+        <nav class="toc">
+            <h3 class="toc-title">もくじ</h3>
+            <ul>
+                <li><a href="#about">ドズル社とは</a></li>
+                <li><a href="#members">メンバー紹介</a></li>
+                <li><a href="#videos">おすすめの動画紹介</a></li>
+            </ul>
+        </nav>
+
+        <section class="about" id="about">
+            <h2>ドズル社とは</h2>
+            <p>ドズル、ぼんじゅうる、おんりー、おらふくん、おおはらMENの５人でマインクラフトを中心に、さまざまなゲーム実況をしているゲーム実況者グループです。
+                毎日18時15分に動画を投稿していて、現在<small>（<span class="last-update">2026年7月</span>時点）では、YouTubeのチャンネル登録者数が２８０万人います。
+            </p>
+        </section>
+
+        <section class="members" id="members">
+            <h2>メンバー紹介</h2>
+            <p>ここでは、メンバーについて紹介します。</p>
+            
+            <div class="member-buttons">
+                <button class="member-btn dozle active" onclick="showMember(0)">ドズル</button>
+                <button class="member-btn bon" onclick="showMember(1)">ぼんじゅうる</button>
+                <button class="member-btn only" onclick="showMember(2)">おんりー</button>
+                <button class="member-btn orafu" onclick="showMember(3)">おらふくん</button>
+                <button class="member-btn men" onclick="showMember(4)">おおはらMEN</button>
+            </div>
+
+            <div id="member-card" class="member-card" style="background-color: #ff7f7f;">
+                <div class="member-img-placeholder">
+                    <img id="member-img" src="img/dozle.jpg" alt="ドズル">
+                </div>
+                <div class="member-info">
+                    <h3 id="member-name">ドズル</h3>
+                    <p id="member-title">ロジカルゴリラ社長</p>
+                    <div id="member-desc">
+                        <ul>
+                            <li id="member-color">メンバーカラー：赤</li>
+                            <li>グループのリーダーで社長。</li>
+                            <li>現在<small>（<span class="last-update">2026年7月</span>時点）</small>、１児のパパ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos" id="videos">
+
+            <h2 class="video-section-title">おすすめの動画紹介</h2>
+            <p class="video-section-desc">
+                ここでは、ドズル社の数ある動画の中から特におすすめの動画を３つ紹介します。
+            </p>
+
+            <div class="video-header">
+                <span class="video-tag">おすすめ動画</span>
+                <h4 class="video-title">【マイクラ】超過酷！裏切り者がいる世界でサバイバル！シーズン６【最終話】</h4>
+                <p class="video-desc">
+                    この動画は、ドズル社メンバーとさかいさんだーさん、まろさん、さんちゃんく！（雨栗さん、水月ルザクさん、米将軍さん）さん、まえよん（ヒカックさん、ぎぞくさん）さん、メッスさんとのコラボしている動画で、市民の方が裏切り者を倒す方法に衝撃を受けた動画です。
+                    私は、このシリーズの最終話が特に印象に残っているのですが、第１話から見るといろんな展開があって面白いと思います。<br>
+                    この裏切り者サバイバルシリーズは現在<small>（<span class="last-update">2026年7月</span>時点）</small>、シーズン９まであるのでぜひ他のシリーズも見てみてください。
+                    誰が裏切り者で、どんな展開になっているのかがとても気になる動画です。
+                </p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/tSV8jv45RqA?si=SJpgiVpKGb4ufWsq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-header second-video">
+                <span class="video-tag">おすすめ動画</span>
+                <h4 class="video-title">【マイクラ】全自動セキュリティハウス対決</h4>
+                <p class="video-desc">
+                    この動画は、準備時間30分でさまざまな装備を付けた敵からダイヤモンドを守り切るという動画です。
+                    おらふくんの発想にとても驚きました。<br>
+                    全自動セキュリティハウス対決は現在<small>（<span class="last-update">2026年7月</span>時点）</small>、５本の動画があるので他の動画も見てみてください。
+                    また、他にもさまざまなセキュリティハウスシリーズがあるので、そちらも見てみてください。
+                </p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/05VpNIeyUnQ?si=pKwAHLtVa00NhmJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-header second-video">
+                <span class="video-tag">おすすめ動画</span>
+                <h4 class="video-title">都道府県が使える世界でエンドラ討伐！【マイクラ】</h4>
+                <p class="video-desc">
+                    この動画は、都道府県それぞれの特色を生かしてチートアイテム化し、アイテムを駆使してエンドラ討伐をする動画です。
+                    動画内では、各都道府県にちなんだクイズが出題されるので、各都道府県について学ぶこともできます。
+                    ドズル社メンバーと一緒にクイズの答えを考えてみるのも楽しいと思います。<br>
+                    現在<small>（<span class="last-update">2026年7月</span>時点）</small>、６本の動画があるので、ぜひ、自分の出身都道府県がどのようなチートアイテムになっているのか探してみてください。
+                </p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/zXwcXHsAemk?si=N0EVHJFObO-CMJ59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>© 2026 ドズル社紹介サイト Created with Html&CSS&JavaScript</p>
+        <p>このサイトはWeb制作学習の授業課題として制作した非営利のサイトです。作品に関する著作権・商標権等は各権利者に帰属します。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
