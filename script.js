@@ -3,35 +3,80 @@ const memberData = [
     {
         name: "ドズル",
         title: "ロジカルゴリラ社長",
-        desc: "<ul><li>メンバーカラー：赤</li><li>グループのリーダーで社長。</li><li>現在<small>（<span class='last-update'></span>時点）</small>、１児のパパ</li></ul>",
+        desc: `
+            <ul>
+                <li>メンバーカラー：赤</li>
+                <li>元医大生。グループのリーダーで社長。</li><li>現在<small>（<span class='last-update'></span>時点）</small>、１児のパパ</li>
+                <li>誕生日：１１月２１日</li>
+                <li>趣味・特技：ゲーム・サウナ</li>
+                <li>好きな食べ物：カレー・うどん・牛丼・寿司・ガリ</li>
+                <li>おともだち：ビッグボス</li>
+            </ul>
+        `,
         bgColor: "#ff7f7f",
         imgSrc: "img/dozle.jpg"
     },
     {
         name: "ぼんじゅうる",
         title: "（心やさしい）卑怯者",
-        desc: "<ul><li>メンバーカラー：紫</li><li>最年長</li></ul>",
+        desc: `
+            <ul>
+                <li>メンバーカラー：紫</li>
+                <li>最年長</li>
+                <li>誕生日：５月３０日</li>
+                <li>趣味・特技：漫画を読むこと</li>
+                <li>好きな食べ物：タン塩・貝</li>
+                <li>おともだち：グラサンバード</li>
+            </ul>
+        `,
         bgColor: "#bf7fff",
         imgSrc: "img/bon.jpg"
     },
     {
         name: "おんりー",
         title: "スピードスター",
-        desc: "<ul><li>メンバーカラー：黄色</li><li>エンドラＲＴＡで日本一になったことがある</li></ul>",
+        desc: `
+        <ul>
+            <li>メンバーカラー：黄色</li>
+            <li>エンドラＲＴＡで日本一になったことがある</li>
+            <li>誕生日：９月９日</li>
+            <li>趣味・特技：ゲーム</li>
+            <li>好きな食べ物：寿司・グミ・ラーメン</li>
+            <li>おともだち：いなりー</li>
+        </ul>
+        `,
         bgColor: "#ffff7f",
         imgSrc: "img/only.jpg"
     },
     {
         name: "おらふくん",
         title: "あなたの心を狙い撃ち",
-        desc: "<ul><li>メンバーカラー：水色</li><li>ドズル社加入時はマイクラ初心者だった</li></ul>",
+        desc: `
+        <ul>
+            <li>メンバーカラー：水色</li>
+            <li>ドズル社加入時はマイクラ初心者だった</li>
+            <li>誕生日：５月２２日</li>
+            <li>趣味・特技：サウナ・カラオケ</li>
+            <li>好きな食べ物：唐揚げ・ラーメン・きくらげの卵とじ・数の子・炒飯</li>
+            <li>おともだち：雪だるまくん</li>
+        </ul>
+        `,
         bgColor: "#9ce0f7",
         imgSrc: "img/orafu.jpg"
     },
     {
         name: "おおはらMEN",
         title: "ズボラな匠",
-        desc: "<ul><li>メンバーカラー：ピンク</li><li>建築がめちゃくちゃ上手い</li></ul>",
+        desc: `
+        <ul>
+            <li>メンバーカラー：ピンク</li>
+            <li>建築がめちゃくちゃ上手い</li>
+            <li>誕生日：７月２８日</li>
+            <li>趣味・特技：ゲーム・カードゲーム・サウナ・キャンプ</li>
+            <li>好きな食べ物：グリーンカレー・ケバブ</li>
+            <li>おともだち：MENフクロウ</li>
+        </ul>
+        `,
         bgColor: "#f38eb4",
         imgSrc: "img/men.jpg"
     }
@@ -88,3 +133,21 @@ function updateLastModifiedDate() {
         });
     }
 }
+
+// ページが読み込まれたら実行
+document.addEventListener('DOMContentLoaded', () => {
+    // このファイル（HTML）が最後に保存・更新された日時を取得
+    const lastModified = new Date(document.lastModified);
+    
+    const year = lastModified.getFullYear();   // 修正した時の「年」
+    const month = lastModified.getMonth() + 1; // 修正した時の「月」
+
+    // 年月を「YYYY年M月」の形式に作成
+    const formattedDate = `${year}年${month}月`;
+
+    // .last-update がついている場所に「ファイルを更新した年月」をセット
+    const updateElements = document.querySelectorAll('.last-update');
+    updateElements.forEach(element => {
+        element.textContent = formattedDate;
+    });
+});
