@@ -95,7 +95,7 @@ html {
     background-repeat: no-repeat; /* 画像を繰り返さない */
     background-position: top center;
     background-size: contain;
-    background-attachment: fixed; /* スクロールしてもおともだちの位置を固定する */
+    background-attachment: fixed;
     padding: 40px 0;              /* 上下の余白 */
 }
 
