@@ -21,7 +21,7 @@ header {
 
 /* ヘッダーの中にあるタイトル文字の位置を直接固定する */
 header h1 {
-    margin-top: 2rem;           /* 上からの距離を固定するので、画面が狭くなっても位置がずれない */
+    margin-top: 2rem;          /* 上からの距離を固定するので、画面が狭くなっても位置がずれない */
     margin-bottom: 0;
 }
 
@@ -40,7 +40,7 @@ header h1 {
     padding: 25px 20px;
     max-width: 800px;                            /* 他のカードと横幅を揃える */
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);     /* 軽い影 */
-    text-align: center;                          /* 中央寄せ */
+    text-align: center;                          
 }
 
 h2, .toc-title {
@@ -58,7 +58,7 @@ h2, .toc-title {
     padding: 0;
     margin: 0;
     display: flex;                               /* 横一列に並べる */
-    justify-content: center;                     /* 中央に寄せる */
+    justify-content: center;                  
     gap: 20px;                                   /* 項目同士の間隔 */
     flex-wrap: wrap;                             /* 画面が狭いときは自動改行 */
 }
