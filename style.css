@@ -411,7 +411,8 @@ footer {
     /* 下側：紹介文エリアの調整 */
     .member-info {
         width: 100%;            /* 横幅いっぱいに広げる */
-        max-height: none;       /* 縦に伸びるように高さ制限を解除 */
+        max-height: 200px;       /* 枠の最大高さを固定 */
+        overflow-y: auto;        /* 文字がはみ出たときに縦スクロールバーを表示 */
         padding: 1.5rem;        /* スマホ用に中の余白を少し狭く */
     }
     
