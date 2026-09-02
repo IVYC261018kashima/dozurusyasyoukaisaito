@@ -54,7 +54,7 @@ h2, .toc-title {
 }
 
 .toc ul {
-    list-style: none;                            /* 箇条書きの「・」を消す */
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;                               /* 横一列に並べる */
@@ -71,15 +71,15 @@ h2, .toc-title {
     font-size: 0.95rem;
     padding: 8px 16px;
     border-radius: 20px;
-    background-color: #f1f3f4;                   /* 押しやすい薄グレーのボタン風 */
-    transition: all 0.3s ease;                   /* ふわっと変わるアニメーション */
+    background-color: #f1f3f4;              /* 押しやすい薄グレーのボタン風 */
+    transition: all 0.3s ease;                /* ふわっと変わるアニメーション */
 }
 
 /* マウスを乗せたときの動き（もくじ） */
 .toc li a:hover {
-    background-color: #ff7f7f;                   /* 背景が赤色に */
-    color: white;                                /* 文字は白色に */
-    transform: translateY(-2px);                 /* ほんの少し上に浮く */
+    background-color: #ff7f7f;
+    color: white;
+    transform: translateY(-2px);               /* ほんの少し上に浮く */
     box-shadow: 0 4px 8px rgba(255, 127, 127, 0.3);
 }
 
@@ -95,18 +95,18 @@ html {
     background-repeat: no-repeat; /* 画像を繰り返さない */
     background-position: center;
     background-size: cover;
-    background-attachment: fixed; /* スクロールしてもおともだちの位置を固定する */
-    padding: 40px 0;              /* 上下の余白 */
+    background-attachment: fixed; /* スクロールしても位置を固定する */
+    padding: 40px 0;
 }
 
 /* 各セクションを白いボックスにして、背景画像の上に浮かせる */
 .hero, .about, .members, .videos {
-    background-color: rgba(255, 255, 255, 0.85); /* ほんの少しだけ透ける白 */
-    border-radius: 12px;                         /* 角を丸くする */
-    margin: 40px auto;                           /* ボックス同士の間の隙間 */
-    padding: 40px 20px;                          /* ボックスの内側の余白 */
-    max-width: 800px;                            /* 読みやすい横幅に制限 */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);     /* 軽い影をつけて立体感を出す */
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 /* 共通セクション */
@@ -219,8 +219,8 @@ section {
 /*おすすめ動画の紹介*/
 /* 動画セクション全体の上下の余白 */
 .videos {
-    padding: 60px 20px;       /* 上下に60px、左右に20pxの余白を設けて綺麗に区切ります */
-    text-align: center;       /* セクション内の要素を中央基準に */
+    padding: 60px 20px;
+    text-align: center;
 }
 
 /* おすすめ動画のセクションの見出しスタイル */
@@ -235,9 +235,9 @@ section {
 /* おすすめ動画セクションの紹介文スタイル */
 .video-section-desc {
     font-size: 1rem;         /* 読みやすい標準的なサイズ */
-    color: #5f6368;          /* 少し優しいグレー */
+    color: #5f6368;
     text-align: center;
-    margin: 0 auto 40px auto; /* 下にある1本目の動画との間に程よい隙間（40px）をあける */
+    margin: 0 auto 40px auto;
     max-width: 600px;        /* 横幅を動画やカードと統一 */
     line-height: 1.6;        /* 行間を広げて読みやすく */
 }
@@ -246,10 +246,10 @@ section {
 .video-header {
     width: 100%;
     max-width: 600px;
-    margin: 40px auto 10px auto; /* 上に多め（40px）、動画との間は狭め（10px）の隙間 */
-    text-align: left; /* 左詰めに設定 */
+    margin: 40px auto 10px auto;
+    text-align: left;
     box-sizing: border-box;
-    padding: 0 10px; /* スマホ時の文字のハミ出し防止 */
+    padding: 0 10px;
 }
 
 /* 2個目以降の動画ヘッダーの上の隙間を作る */
@@ -260,8 +260,8 @@ section {
 /* 「おすすめ動画」という小さな水色のタグ */
 .video-tag {
     display: inline-block;
-    background-color: #e8f0fe; /* Google風の薄い青 */
-    color: #1a73e8; /* Googleの青 */
+    background-color: #e8f0fe;
+    color: #1a73e8;
     font-size: 11px;
     font-weight: bold;
     padding: 3px 8px;
@@ -279,7 +279,7 @@ section {
 /* 動画の解説文 */
 .video-desc {
     font-size: 0.85rem;
-    color: #5f6368; /* 少し優しいグレー */
+    color: #5f6368;
     line-height: 1.6;
     margin: 8px 0 0 0;
     text-align: left;
@@ -300,9 +300,9 @@ section {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* カードと同じ柔らかい影 */
     overflow: hidden;        /* 角丸からはみ出た動画の端をカット */
     
-    /* YouTubeの標準比率「16:9」を保ったまま伸縮させる魔法の設定 */
+    /* YouTubeの標準比率「16:9」を保ったまま伸縮させる設定 */
     position: relative;
-    padding-top: 56.25%;     /* 9 ÷ 16 ＝ 0.5625（16:9の比率） */
+    padding-top: 56.25%;
     height: 0;
 }
 
@@ -318,14 +318,14 @@ section {
 
 /*ページの一番上にもどるボタンの設定*/
 .top-back-btn {
-    position: fixed;             /* 画面の右下に固定 */
-    bottom: 30px;                /* 下からの距離 */
-    right: 30px;                 /* 右からの距離 */
-    width: 50px;                 /* ボタンの幅 */
-    height: 50px;                /* ボタンの高さ */
-    background-color: #2c3e50;   /* ボタンの色 */
-    color: #ffffff;              /* 文字・矢印の色 */
-    border-radius: 25px;          /* 角を丸くする */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    border-radius: 25px;
     
     /* 矢印（▲）をボタンの真ん中に配置 */
     display: flex;
