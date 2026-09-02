@@ -91,7 +91,7 @@ const memberData = [
 
 // メンバーを切り替える
 function showMember(index) {
-    // 1. データを書き換える
+    // データを書き換える
     document.getElementById("member-name").textContent = memberData[index].name;
     document.getElementById("member-title").textContent = memberData[index].title;
     document.getElementById("member-desc").innerHTML = memberData[index].desc;
@@ -99,7 +99,7 @@ function showMember(index) {
     document.getElementById("member-img").src = memberData[index].imgSrc;
     document.getElementById("member-img").alt = memberData[index].name;
     
-    // 2. ボタンの「アクティブ状態（色が変わるやつ）」を切り替える
+    // ボタンの「アクティブ状態（色が変わるやつ）」を切り替える
     const buttons = document.querySelectorAll(".member-btn");
     buttons.forEach((btn, i) => {
         if (i === index) {
@@ -109,7 +109,7 @@ function showMember(index) {
         }
     });
 
-    // 3. カードに一瞬アニメーションを再適用する
+    // カードに一瞬アニメーションを再適用する
     const card = document.getElementById("member-card");
     card.style.animation = 'none';
     card.offsetHeight; /* 擬似的にブラウザに再描画させる魔法の1行 */
@@ -117,6 +117,19 @@ function showMember(index) {
 
     // メンバーを切り替えた瞬間に、最終更新年月を書き換える処理
     updateLastModifiedDate();
+}
+
+//  日付を更新する処理（独立した関数）
+function updateLastModifiedDate() {
+    const lastModified = new Date(document.lastModified);
+    const year = lastModified.getFullYear();
+    const month = lastModified.getMonth() + 1;
+    const formattedDate = `${year}年${month}月`;
+
+    const updateElements = document.querySelectorAll('.last-update');
+    updateElements.forEach(element => {
+        element.textContent = formattedDate;
+    });
 }
 
 // ページが読み込まれたとき（最初の1回）に実行する処理
