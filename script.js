@@ -29,6 +29,7 @@ const memberData = [
                 <li>好きな食べ物：タン塩・貝</li>
                 <li>おともだち：グラサンバード</li>
                 <li>MBTI：ESFP（エンターテイナー）<small>（動画しらべ）</small></li>
+                <li>鉄千会長</li>
                 <li>最年長</li>
             </ul>
         `,
@@ -47,6 +48,7 @@ const memberData = [
             <li>おともだち：いなりー</li>
             <li>MBTI：INTJ（建築家）<small>（動画しらべ）</small></li>
             <li>エンドラＲＴＡで日本一になったことがある</li>
+            <li>最年少</li>
         </ul>
         `,
         bgColor: "#ffff7f",
@@ -64,6 +66,7 @@ const memberData = [
             <li>おともだち：雪だるまくん</li>
             <li>MBTI：ENFP（運動家）<small>（動画しらべ）</small></li>
             <li>ドズル社加入時はマイクラ初心者だった</li>
+            <li>ドズル社メンバー唯一の関西出身</li>
         </ul>
         `,
         bgColor: "#9ce0f7",
@@ -81,6 +84,7 @@ const memberData = [
             <li>おともだち：MENフクロウ</li>
             <li>MBTI：INFP（仲介者）<small>（動画しらべ）</small></li>
             <li>プロマインクラフター</li>
+            <li>公務員を目指していたこともある</li>
         </ul>
         `,
         bgColor: "#f38eb4",
