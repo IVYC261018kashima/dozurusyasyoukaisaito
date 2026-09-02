@@ -6,11 +6,13 @@ const memberData = [
         desc: `
             <ul>
                 <li>メンバーカラー：赤</li>
-                <li>元医大生。グループのリーダーで社長。</li><li>現在<small>（<span class='last-update'></span>時点）</small>、１児のパパ</li>
                 <li>誕生日：１１月２１日</li>
                 <li>趣味・特技：ゲーム・サウナ</li>
                 <li>好きな食べ物：カレー・うどん・牛丼・寿司・ガリ</li>
                 <li>おともだち：ビッグボス</li>
+                <li>MBTI：ENFP（運動家）<small>（動画しらべ）</small></li>
+                <li>元医大生。グループのリーダーで社長。</li>
+                <li>現在<small>（<span class='last-update'></span>時点）</small>、１児のパパ</li>
             </ul>
         `,
         bgColor: "#ff7f7f",
@@ -22,11 +24,12 @@ const memberData = [
         desc: `
             <ul>
                 <li>メンバーカラー：紫</li>
-                <li>最年長</li>
                 <li>誕生日：５月３０日</li>
                 <li>趣味・特技：漫画を読むこと</li>
                 <li>好きな食べ物：タン塩・貝</li>
                 <li>おともだち：グラサンバード</li>
+                <li>MBTI：ESFP（エンターテイナー）<small>（動画しらべ）</small></li>
+                <li>最年長</li>
             </ul>
         `,
         bgColor: "#bf7fff",
@@ -38,11 +41,12 @@ const memberData = [
         desc: `
         <ul>
             <li>メンバーカラー：黄色</li>
-            <li>エンドラＲＴＡで日本一になったことがある</li>
             <li>誕生日：９月９日</li>
             <li>趣味・特技：ゲーム</li>
             <li>好きな食べ物：寿司・グミ・ラーメン</li>
             <li>おともだち：いなりー</li>
+            <li>MBTI：INTJ（建築家）<small>（動画しらべ）</small></li>
+            <li>エンドラＲＴＡで日本一になったことがある</li>
         </ul>
         `,
         bgColor: "#ffff7f",
@@ -54,11 +58,12 @@ const memberData = [
         desc: `
         <ul>
             <li>メンバーカラー：水色</li>
-            <li>ドズル社加入時はマイクラ初心者だった</li>
             <li>誕生日：５月２２日</li>
             <li>趣味・特技：サウナ・カラオケ</li>
             <li>好きな食べ物：唐揚げ・ラーメン・きくらげの卵とじ・数の子・炒飯</li>
             <li>おともだち：雪だるまくん</li>
+            <li>MBTI：ENFP（運動家）<small>（動画しらべ）</small></li>
+            <li>ドズル社加入時はマイクラ初心者だった</li>
         </ul>
         `,
         bgColor: "#9ce0f7",
@@ -70,11 +75,12 @@ const memberData = [
         desc: `
         <ul>
             <li>メンバーカラー：ピンク</li>
-            <li>建築がめちゃくちゃ上手い</li>
             <li>誕生日：７月２８日</li>
             <li>趣味・特技：ゲーム・カードゲーム・サウナ・キャンプ</li>
             <li>好きな食べ物：グリーンカレー・ケバブ</li>
             <li>おともだち：MENフクロウ</li>
+            <li>MBTI：INFP（仲介者）<small>（動画しらべ）</small></li>
+            <li>プロマインクラフター</li>
         </ul>
         `,
         bgColor: "#f38eb4",
