@@ -94,7 +94,8 @@ html {
     background-image: url(img/dozlesya\ syoukaisaito\ haikei\ 2.png);
     background-repeat: no-repeat; /* 画像を繰り返さない */
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-color: #fbe9c9;
     background-attachment: fixed; /* スクロールしても位置を固定する */
     padding: 40px 0;
 }
@@ -446,7 +447,7 @@ footer {
 
 /* パソコン・大画面対応（1025px～） */
 @media screen and (min-width: 1025px) {
-    
+
     /* 白いカード枠の幅を広げて、PC画面で見栄え良くする */
     .hero, .about, .members, .videos, .toc {
         max-width: 900px;        /* PCの大画面でも読みやすいよう上限を900pxに拡張 */
