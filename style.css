@@ -333,13 +333,13 @@ section {
     justify-content: center;
     align-items: center;
     
-    text-decoration: none;       /* 下線を消す */
+    text-decoration: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;   /* 横幅や色の変化を滑らかにする */
     z-index: 999;
     overflow: hidden;            /* はみ出た文字を隠す */
     white-space: nowrap;         /* 文字の途中で改行させない */
-    padding: 0 10px;             /* 内側の余白 */
+    padding: 0 10px;
     box-sizing: border-box;
 }
 
@@ -361,8 +361,8 @@ section {
 
 /* マウスを乗せた（タップした）ときの動き */
 .top-back-btn:hover {
-    width: 150px;                /* 横幅を広げて文字を表示 */
-    background-color: #ff7f7f;   /* ドズル社レッド等のアクセントカラーに変更 */
+    width: 150px;
+    background-color: #ff7f7f;
     transform: translateY(-5px);  /* ひょっこり少し上に浮き上がる */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
@@ -371,7 +371,7 @@ section {
 .top-back-btn:hover .btn-text {
     max-width: 100px;
     opacity: 1;
-    margin-right: 5px;           /* 矢印との隙間 */
+    margin-right: 5px;
 }
 
 /* スーッと滑らかにスクロールさせる設定 */
